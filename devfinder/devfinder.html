@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="devfinder.css">
+</head>
+<body>
+    <div class="search-box">
+        <div class="search-container">
+            <div class="title">
+                <div>Dev</div>
+                <div>Finder</div>
+            </div>
+            <input class="input-search" type="text" id="username" placeholder="Search GitHub">
+            <button class="button-search" onclick="searchUser()">Find</button>
+        </div>
+    </div>
+    
+    <div id="user-info" class="user-info">
+        <div class="details-1" id="details-1">
+            <div class="avatar-container">
+                <img id="avatar" class="avatar" src="" width="100px" height="100px">
+            </div>
+            <div class="name">
+                <div id="full-name" class="user-name">Full Name</div>
+                <div id="login" class="login">username</div>
+            </div>
+            <div class="user-links" id="user-links">
+                <a href="" class="twitter-line" id="twitter-link">
+                    <img src="twitter.svg" alt="twitter-logo" width="17px" height="17px">
+                    <div id="twitter" class="twitter">Twitter</div>
+                </a>
+                <a href="" class="github-line" id="github-link">
+                    <img src="github.svg" alt="github-logo" width="17px" height="17px">
+                    <div id="github" class="github">GitHub</div>
+                </a>
+                <a href="" class="blog-line" id="blog-link">
+                    <img src="blog.svg" alt="blog-logo" width="17px" height="17px">
+                    <div id="blog" class="blog">Blog</div>
+                </a>
+                <a href="" class="location-line" id="location-link">
+                    <img src="location.svg" alt="location-logo" width="17px" height="17px">
+                    <div id="location" class="user-location">Location</div>
+                </a>
+            </div>
+        </div>
+        <div class="details-2" id="details-2">
+            <div class="stats" id="stats">
+                <div class="repos">
+                    <div id="repos" class="user-repos">Repos</div>
+                    <div class="text-repos">Repos</div>
+                </div>
+                <div class="followers">
+                    <div id="followers" class="user-followers">Followers</div>
+                    <div class="text-followers">Followers</div>
+                </div>
+                <div class="following">
+                    <div id="following" class="user-following">Following</div>
+                    <div class="text-following">Following</div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="bio" id="biography">
+                    <div class="text-bio">Biography</div>
+                    <div id="bio" class="user-bio">Bio</div>
+                </div>
+                <div id="created" class="created"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="toast" class="toast">User not found!</div>
+
+    <script src="devfinder.js"></script>
+</body>
+</html>
